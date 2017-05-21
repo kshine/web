@@ -1,0 +1,5 @@
+tomcat 启动加载配置文件
+1 servlet init(ServletConfig) load-on-startup
+2 filter   init(FilterConfig) web-xml 注册过滤器自动调用初始化
+3 listener  ServletContextListener servletContext对象监听
+spring提供 ContextLoaderListener -- web.xml 配置 <listener>
